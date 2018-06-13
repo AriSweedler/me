@@ -1,3 +1,21 @@
-a { color: #fe921f; text-decoration: underline; }
+:root {
+    --link-color: #fe921f;
+    --link-color-hover: #000000;
+}
 
-a:hover { color: #ffffff }
+a {
+    color: var(--link-color);
+    text-decoration: underline; 
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+p {
+    padding-left: 5px;
+}
