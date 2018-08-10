@@ -1,0 +1,20 @@
+/* Menu Button */
+$distance: 35px;
+$hamburger-size: 27px;
+$hamburger-slice: $hamburger-size/9;
+
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: $distance;
+    top: $distance;
+    cursor: pointer;
+    @include easeOut();
+
+    .btn-line {
+        width: $hamburger-slice*9;
+        height: $hamburger-slice;
+        margin: 0 0 $hamburger-slice*2.1 0;
+        background: $text-color;
+    }
+}

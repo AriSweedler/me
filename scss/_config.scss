@@ -4,6 +4,7 @@ $link-color: #ffffff;
 $show-home-image: true;
 $home-image: url(../img/Yianng.jpg);
 $background-opacity: 0.9;
+$text-color: #ffffff;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;

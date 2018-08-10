@@ -1,9 +1,23 @@
+/* Menu Button */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn .btn-line {
+    width: 27px;
+    height: 3px;
+    margin: 0 0 6.3px 0;
+    background: #ffffff; }
+
 * {
   box-sizing: border-box; }
 
 body {
   background: #444444;
-  color: #fff;
+  color: #ffffff;
   height: 100%;
   margin: 0;
   font-family: 'Segou UI' Tahoma, Geneva, Verdana, sans-serif;
