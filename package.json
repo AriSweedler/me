@@ -1,0 +1,22 @@
+{
+  "name": "arisweedler.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "echo \"npx node-sass -w scss/ -o dist/css/ --recursive\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriSweedler/arisweedler.github.io.git"
+  },
+  "author": "Ari Sweedler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AriSweedler/arisweedler.github.io/issues"
+  },
+  "homepage": "https://github.com/AriSweedler/arisweedler.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
