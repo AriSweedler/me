@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "echo \"npx node-sass -w scss/ -o dist/css/ --recursive\""
+    "sass": "echo \"npx node-sass -w scss/ -o docs/css/ --recursive\""
   },
   "repository": {
     "type": "git",
