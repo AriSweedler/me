@@ -2,7 +2,7 @@
 $hamburger-size: 270px;
 $slice: $hamburger-size/9;
 $padding: 35px;
-$portrait-url: 'https://s.gravatar.com/avatar/52f05fe32bfffa9c21f75c2a84cedb72?s=80';
+$portrait: url('../img/portrait.jpg');
 
 .menu-btn {
     position: absolute;
@@ -82,9 +82,11 @@ $portrait-url: 'https://s.gravatar.com/avatar/52f05fe32bfffa9c21f75c2a84cedb72?s
         .portrait {
             width: 250px;
             height: 250px;
-            background: url($portrait-url);
             border-radius: 50%;
             border: solid 3px $secondary-color;
+            background: $portrait;
+            background-size: cover;
+            background-position: center center;
         }
     }
 

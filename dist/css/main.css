@@ -1,3 +1,4 @@
+/* Media Query mixins */
 /* Menu Button */
 .menu-btn {
   position: absolute;
@@ -58,9 +59,11 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("https://s.gravatar.com/avatar/52f05fe32bfffa9c21f75c2a84cedb72?s=80");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 3px #eece1a;
+      background: url("../img/portrait.jpg");
+      background-size: cover;
+      background-position: center center; }
   .menu-nav-item {
     transform: translate3d(600px, 0, 0);
     /* transition to normality when `show' class is there */
@@ -95,6 +98,38 @@
 
 .menu-nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+/* Widescreens */
+/* Desktops/Laptops */
+/* Tablets and small laptops */
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .large-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  ul.menu-nav {
+    height: 75vh;
+    transform: translate(-100%, 0);
+    font-size: 24px; }
+  div.menu-branding {
+    height: 25vh;
+    transform: translate(100%, 0); }
+    div.menu-branding .portrait {
+      width: 20vh;
+      height: 20vh;
+      background: url("../img/portrait_small.jpg"); } }
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
 
 * {
   box-sizing: border-box; }
