@@ -10,7 +10,7 @@ toggleMenu.rotation = 0;
 menuBtn.addEventListener('click', toggleMenu);
 
 /* With every call to this funciton, the menuButton will rotate an additional
- * 180 degrees. Also, the 'close'/'show' classes will be added or removed to
+ * 180 degrees. Also, the 'close'/'show' classes will be added or removed to 
  * the proper DOM elements */
 function toggleMenu() {
     menuBtn.style.cssText += `transform: rotate(${toggleMenu.rotation += 180}deg);`
