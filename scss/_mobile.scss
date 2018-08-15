@@ -45,6 +45,14 @@ $portrait-small: url('../img/portrait_small.jpg');
             background: $portrait-small;
         }
     }
+    
+    .about-info {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        .bio {
+            grid-column: 1 / 1 !important;
+        }
+    }
 }
 
 /* Mobile */
