@@ -1,0 +1,26 @@
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 1fr;
+
+    .bio {
+        grid-column: 2 / -1;
+        font-size: 1.5rem;
+    }
+
+    .bio-image {
+        margin: auto;
+        width: 175px;
+        height: 175px;
+        align-items: center;
+        justify-content: center;
+        @include portrait;
+    }
+
+    .job {
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
