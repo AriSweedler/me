@@ -38,9 +38,9 @@
         transform: translate(100%, 0);
 
         .portrait {
-            width: 15vh;
-            height: 15vh;
-            background: $portrait-small;
+            width: 100px;
+            height: 100px;
+            /* background: $portrait-small; */
         }
     }
 

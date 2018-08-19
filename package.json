@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://arisweedler.github.io/me",
   "scripts": {
-    "sass": "npx node-sass -w scss/ -o docs/css/ --recursive",
+    "sass": "npx node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
