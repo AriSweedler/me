@@ -56,6 +56,24 @@ header {
     color: $secondary-color;
 }
 
+.hover-base {
+    transition-timing-function: ease-out;
+    .hover-target {
+        /* when switching to not-hover, visibility transition must be delayed while font-size is transitioning. */
+        transition: visibility 0s ease-out $transition-time, font-size $transition-time ease-out 0s;
+        font-size: 0%;
+        visibility: hidden;
+    }
+    &:hover {
+        .hover-target {
+            /* when switching to visible, this must become visible after no delay. */
+            transition: visibility 0s ease-out 0s, font-size $transition-time ease-out 0s;
+            font-size: 100%;
+            visibility: visible;
+        }
+    }
+}
+
 main {
     padding: 4rem;
     min-height: calc(100vh - 60px); /* $footer-height */
@@ -65,9 +83,12 @@ main {
         font-size: 3rem;
         a {
             padding: .4rem;
+            @include easeOut();
             &:hover {
                 color: $secondary-color;
-                @include easeOut();
+            }
+            div {
+                color: set-text-color($primary-color);
             }
         }
     }

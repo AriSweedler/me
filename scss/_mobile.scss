@@ -43,12 +43,32 @@
             background: $portrait-small;
         }
     }
-    
+
     .about-info {
         grid-template-columns: 1fr;
         grid-auto-flow: row;
         .bio {
             grid-column: 1 / 1 !important;
+        }
+    }
+
+    .boxes {
+        /* items in the grid */
+        div {
+            /* these borders stay constant size, even if the grid column/row changes */
+            div {
+                color: set-text-color($third-color);
+                font-style: bold;
+                background-color: $third-color;
+            }
+        }
+    }
+
+    /* don't hide things in the contact section when the screen is small */
+    #contact {
+        .hover-target {
+            font-size: 100%;
+            visibility: visible;
         }
     }
 }

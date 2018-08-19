@@ -1,5 +1,6 @@
 $primary-color: #444444;
 $secondary-color: #eece1a;
+$third-color: #536895;
 $link-color: #ffffff;
 $show-home-image: true;
 $home-image: url(../img/Yianng.jpg);
@@ -7,6 +8,7 @@ $portrait: url('../img/portrait.jpg');
 $portrait-small: url('../img/portrait_small.jpg');
 $background-opacity: 0.9;
 $footer-height: 60px;
+$transition-time: 0.5s;
 
 @mixin easeOut {
     transition: all 0.5s ease-out;
@@ -32,6 +34,15 @@ $footer-height: 60px;
             }
         }
     }
+}
+
+@mixin barnBorder {
+    border: solid 5px darken(white, 10);
+    border-top: solid 5px lighten(black, 10);
+    border-left: solid 5px lighten(black, 5);
+    border-radius: 35px;
+    margin: 15px;
+    padding: 15px;
 }
 
 /* consistent portrait styling */

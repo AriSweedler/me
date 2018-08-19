@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://arisweedler.github.io/me",
   "scripts": {
-    "sass": "echo \"npx node-sass -w scss/ -o docs/css/ --recursive\""
+    "sass": "npx node-sass -w scss/ -o docs/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/AriSweedler/arisweedler.github.io#readme",
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3"
   }
 }
