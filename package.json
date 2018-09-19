@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://arisweedler.github.io/me",
+  "homepage": "https://github.com/AriSweedler/arisweedler.github.io#readme",
   "scripts": {
     "sass": "npx node-sass -w scss/ -o dist/css/ --recursive",
     "deploy": "gh-pages -d dist"
@@ -17,9 +17,9 @@
   "bugs": {
     "url": "https://github.com/AriSweedler/arisweedler.github.io/issues"
   },
-  "homepage": "https://github.com/AriSweedler/arisweedler.github.io#readme",
   "dependencies": {
     "gh-pages": "^1.2.0",
+    "html2canvas": "^1.0.0-alpha.12",
     "node-sass": "^4.9.3"
   }
 }

@@ -13,7 +13,7 @@ menuBtn.addEventListener('click', toggleMenu);
  * 180 degrees. Also, the 'close'/'show' classes will be added or removed to 
  * the proper DOM elements */
 function toggleMenu() {
-    menuBtn.style.cssText += `transform: rotate(${toggleMenu.rotation += 180}deg);`
+    menuBtn.style.cssText += `transform: rotate(${toggleMenu.rotation += 180}deg);`;
     
     if (toggleMenu.visible = !toggleMenu.visible) {
         menuBtn.classList.add('close');
