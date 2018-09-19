@@ -56,21 +56,20 @@ header {
     color: $secondary-color;
 }
 
-.hover-base {
-    transition-timing-function: ease-out;
-    .hover-target {
+abbr[show] {
+    text-decoration: none;
+    &:hover:after {
+        /* when switching to visible, become visible after no delay. */
+        transition: visibility 0s ease-out 0s, font-size $transition-time ease-out 0s;
+        font-size: 100%;
+        visibility: visible;
+    }
+    &:after {
+        content: attr(show);
         /* when switching to not-hover, visibility transition must be delayed while font-size is transitioning. */
         transition: visibility 0s ease-out $transition-time, font-size $transition-time ease-out 0s;
         font-size: 0%;
         visibility: hidden;
-    }
-    &:hover {
-        .hover-target {
-            /* when switching to visible, this must become visible after no delay. */
-            transition: visibility 0s ease-out 0s, font-size $transition-time ease-out 0s;
-            font-size: 100%;
-            visibility: visible;
-        }
     }
 }
 
