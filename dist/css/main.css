@@ -16,16 +16,16 @@
     margin: 0 0 6.3px 0;
     background: #ffffff;
     transition: all 0.5s ease-out; }
-  .menu-btn.close .btn-line {
+  .menu-btn.show .btn-line {
     /* Line 1 - rotate */
     /* Line 2 - hide */
     /* Line 3 - rotate */ }
-    .menu-btn.close .btn-line:nth-child(1) {
+    .menu-btn.show .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(11.025px, 11.025px); }
-    .menu-btn.close .btn-line:nth-child(2) {
+    .menu-btn.show .btn-line:nth-child(2) {
       /* Can't do visibility: hidden; because it doesn't play nice with transitions */
       opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
+    .menu-btn.show .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(2.1px, -2.1px); }
 
 /* Menu overlay */
