@@ -1,6 +1,6 @@
 /* Select DOM items */
 const menuBtn = document.querySelector('.menu-btn');
-const menuItems = getDOMItems('.menu', ['', '-nav', '-branding', '-nav-item']);
+const menuItems = getDOMItems('.menu', ['', '-nav', '-branding', '-nav-item', '-btn']);
 
 /* Set initial state of menu */
 toggleMenu.visible = false;
@@ -13,13 +13,11 @@ menuBtn.addEventListener('click', toggleMenu);
  * 180 degrees. Also, the 'close'/'show' classes will be added or removed to 
  * the proper DOM elements */
 function toggleMenu() {
-    menuBtn.style.cssText += `transform: rotate(${toggleMenu.rotation += 180}deg);`
-    
+    menuBtn.style.cssText += `transform: rotate(${toggleMenu.rotation += 180}deg);`;
+
     if (toggleMenu.visible = !toggleMenu.visible) {
-        menuBtn.classList.add('close');
         menuItems.forEach(i => i.classList.add('show'));
     } else {
-        menuBtn.classList.remove('close');
         menuItems.forEach(i => i.classList.remove('show'));
     }
 }
