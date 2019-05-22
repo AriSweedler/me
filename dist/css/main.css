@@ -101,6 +101,9 @@
 .menu-nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.menu-nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
