@@ -1,0 +1,103 @@
+:root {
+  --main-bg-color: #dac6c6;
+  --patch: #053b3b11;
+  --accent-bg-color: #be8e8e;
+  --soft-accent-bg-color: #c59f9f;
+  --main-text-color: #062222;
+  --accent-text-color: #025e5e;
+
+}
+
+/* I'll use css-grid to make the text centered and not too wide
+ * */
+body {
+  display: grid;
+  /* TODO is 9 inches wide (with 1 inch padding either side) really what I want? */
+  grid-template-columns: minmax(1.2rem, 1fr) minmax(auto, 8.5in) minmax(1.2rem, 1fr);
+  text-align: justify;
+
+  /* Use this lovely wide font */
+  font-family: 'Encode Sans Expanded', sans-serif;
+
+  /* I like big wide fonts. I think they're easier to read. */
+  font-size: 20px;
+  background-image: linear-gradient(90deg, var(--accent-bg-color), var(--main-bg-color) 10%, var(--main-bg-color) 90%, var(--accent-bg-color) 100%);
+  /* background-color: var(--main-bg-color); */
+  color: var(--main-text-color);
+}
+
+/* position all the top-level children of body to only be in the second column */
+body > * {
+  grid-column: 2;
+  background-color: var(--main-bg-color);
+  line-height: 1.5;
+}
+
+/* But we can override the above stuff with something like this */
+body > img,pre {
+  grid-column: 1 / 4;
+  width: 80%;
+  max-width: 100ch;
+  justify-self: center;
+  background-color: rgba(0, 0, 0, 0.089);
+}
+
+
+p {
+  /* TODO This feels like bad practice. Especially using inches! */
+  padding: 5px 1in;
+  margin: 0.5em;
+
+  /* Make paragraphs more readable */
+  text-shadow: -0.5px -0.5px #000;
+  background-color: var(--patch);
+  border-radius: 3%;
+}
+
+pre > code {
+  padding: 0.5em;
+  text-shadow: 0px 0px 0.5px #000;
+}
+
+/*I'll change colors. Background, and text color, as well as primary and
+ * secondary colors for accents (horizontal rules, header/footer, hovering, h1,
+ * h2, h3, etc.) */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+  width:400px;
+  margin-bottom:5px;
+  padding-left:50px;
+  line-height:2;
+  transition: all 0.2s;
+
+  /* Make headers pop more readable */
+  text-shadow: -1px -1px #000;
+}
+
+h2 {
+  font-size: 40px;
+  background-image: linear-gradient(90deg, var(--main-bg-color), var(--accent-bg-color) 12%, var(--main-bg-color) 100%);
+}
+
+h3 {
+  font-size: 30px;
+  background-image: linear-gradient(90deg, var(--main-bg-color), var(--main-bg-color) 10%, var(--soft-accent-bg-color) 22%, var(--main-bg-color) 100%);
+}
+
+h2:hover, h3:hover {
+  color: var(--accent-text-color);
+  cursor: pointer;
+}
+
+h2::before {
+  content: "> ";
+}
+
+h3::before {
+  content: ">> ";
+}
+
+/* TODO make blockquotes look better */
+/* TODO make clicking h2 hide EVERYTHING else (only display stuff from this h2 inclusive to the next h2 exclusive) */
+/* TODO Click ANYthing will collapse it?? */
+/* TODO why don't I just let this develop naturally */
