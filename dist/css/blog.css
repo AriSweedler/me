@@ -42,16 +42,24 @@ body > img,pre {
   background-color: rgba(0, 0, 0, 0.089);
 }
 
-
 p {
   /* TODO This feels like bad practice. Especially using inches! */
   padding: 5px 1in;
   margin: 0.5em;
-
-  /* Make paragraphs more readable */
-  text-shadow: -0.5px -0.5px #000;
   background-color: var(--patch);
   border-radius: 3%;
+}
+
+blockquote {
+  margin: 0 0 0 50px;
+}
+
+blockquote > p {
+  margin: 5px 10px;
+}
+
+ul > p, li > p {
+  padding-left: 0.5em;
 }
 
 pre > code {
@@ -71,7 +79,7 @@ h1,h2,h3,h4,h5,h6 {
   transition: all 0.2s;
 
   /* Make headers pop more readable */
-  text-shadow: -1px -1px #000;
+  text-shadow: 0 0 0;
 }
 
 h2 {
