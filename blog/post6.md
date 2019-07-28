@@ -53,4 +53,16 @@ even if it was never something I felt. I guess that makes it an idiom.
 
 # III
 
-Well, I suppose I don't have anything else to say.
+Well, I suppose I don't have anything else to say. I look forward to finishing
+the updates of this site. Then I can just write these blog posts and gatsby or
+whatever will automatically do everything that needs to be done in order to make
+it a blog post. These tend to be fun and soothing to write, but this one was
+pretty empty and boring. I didn't have anything to say. I will go to be and wake
+up ready for tomorrow tomorrow. I need to convince myself that, but I also do
+genuinely think that it'll be true, for the most part. I do not look forward to
+working on the problem more, because I'm very uncertain how to proceed.
+
+But if I attack it systemically then I'll be fine. It's going to be a very very
+ugly solution, but by god it'll work. Simple, correct, THEN fast. In that order.
+I need to kinda get over myself and just chill. Stop overestimating myself, and
+stop underestimating myself. Let's go. Humble.
